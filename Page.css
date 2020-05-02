@@ -1,0 +1,2525 @@
+body{
+	position: relative;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+#Menu_bar{
+	position: fixed;/*간단하게 메뉴바 상단 고정*/
+	text-align: center;
+	margin: 0 auto;
+	height: 80px;
+	width: 100%;
+	margin-bottom: 200px;
+	top: 0;
+	z-index: 10000;
+	background-color: #ffffff;
+}
+#Menu_bar a[class="logo"] {
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	background: url('Logo.png');
+	background-repeat: no-repeat;
+	background-size: 150px;
+	top: 10px;
+	right: 350px;
+	width: 150px;
+	height: 70px;
+}
+#Menu_bar a[class="Menu"]{
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	bottom: 30px;
+	left: 200px;
+	color: #000000;
+	font-size: 20px;
+}
+#Menu_bar a[class="Menu"]:hover{
+	font-weight: bolder;
+}
+.Hello{
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	right: 240px;
+	top: 250px;
+	font-size: 100px;
+	font-weight: bold;
+}
+.Hello_H{
+	color: #4285f4
+}
+.Hello_E{
+	color: #ea4335
+}
+.Hello_L{
+	color: #fbbc05
+}
+.Hello_L2{
+	color: #4285f4
+}
+.Hello_O{
+	color: #34a853
+}
+.Hello_bar{
+	position: relative;
+	background-color: #fae9e8;
+	margin: 0 auto;
+	right:  20px;
+	width: 200px;
+	height: 30px;
+	top: 200px;
+	z-index: -1;
+}
+.Search_bar{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 200px;
+	right: 50px;
+	width: 700px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: none;
+	box-shadow: 5px 5px 5px #3f3f3f inset, 5px 5px 5px #3f3f3f;/*iinset 안쪽그림자*/
+	border-radius: 30px;
+}
+.Search_contant{
+	position: relative;
+	text-align: center;
+	left: 100px;
+	margin: 15px;
+	margin-right: 100px;
+	font-size: 50px
+}
+.typing{  
+	position: relative;
+	display: inline; 
+	animation-name: cursor; 
+	animation-duration: 1s; 
+	animation-iteration-count: infinite; 
+	font-size: 50px;
+} 
+.typing-txt{
+	text-align: center;
+	position: relative;
+	display: none; /*none 해놔야 ul 부분 안뜸*/
+}
+@keyframes cursor{ 
+	0%{border-right: 1px solid #fff} 
+	50%{border-right: 1px solid #000} 
+	100%{border-right: 1px solid #fff} 
+}
+.Dodbogi{
+	position: relative;
+	display: block;
+	background: url('dodbogi.png');
+	margin: 0 auto;
+	background-size: 50px;
+	width: 50px;
+	height: 50px;
+	top: 130px;
+	left: 250px;
+}
+
+.About_title{
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	top: 350px;
+	font-weight: bold;
+}
+.About_bg{
+	position: relative;
+	background: url('AboutA.png');
+	background-repeat: no-repeat;/*이미지 한번만.*/
+	margin: 0 auto;
+	background-size: 600px;/*백그라운드 사이즈 지정 하고 
+	width height 지정 하면 기본 이미지 파일보다 커지게 할 수 있음.*/
+	width: 600px;
+	height: 600px;
+	left: 100px;
+	top: 230px;
+}
+.About_me{/*비*/
+	position: relative;
+	background: url('AboutMe.png');
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	background-size: 200px;
+	right: 320px;
+	width: 200px;
+	height: 200px;
+	bottom: 270px;
+}
+.About_all{
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 100%;
+}
+.About_contants{
+	position: relative;
+	left: 100px;
+	bottom: 450px;
+}
+.About_contants b{
+	font-size: 25px;
+}
+.Profile{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	right: 250px;
+	bottom: 400px;
+}
+.Skill_container{
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	bottom: 470px;
+	width: 100px;
+	height: 100px;
+	left: 200px;
+}
+.P_svg{
+	position: relative;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	z-index: 1000;
+}
+.Percent{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	z-index: 1000;
+}
+.Percent .P_num{
+	position: absolute;
+	bottom:  48px;
+	left: 21px;
+}
+.Percent .P_num h1{
+	font-size: 15px;
+}
+.text{
+	position: relative;
+	font-size: 18px;
+	z-index: 1;
+	bottom: 150px;
+	right: 15px;
+}
+.SVG svg circle{
+	cx: 30;
+	cy: 30;
+	r: 30;
+}
+svg circle{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	stroke-width: 10;
+	stroke: none;/*원 100%*/
+	fill: none;
+	transform: translate(5px,5px);
+}
+svg circle:nth-child(2){
+	stroke-dasharray: 200;
+	stroke-dashoffset: 200;
+}
+.P_svg:nth-child(1) svg circle:nth-child(2){
+	stroke-dashoffset: calc(200 - (200 * 80) / 100);
+	/*calc = calculate 줄임 말 "-" 요소는 띄어쓰기를 해야만
+	마이너스 요소로 바뀜*/
+	stroke: purple;
+}/*HTML*/
+.P_svg:nth-child(2) svg circle:nth-child(2){
+	stroke-dashoffset: calc(200 - (200 * 70) / 100);
+	/*calc = calculate 줄임 말 "-" 요소는 띄어쓰기를 해야만
+	마이너스 요소로 바뀜*/
+	stroke: green;
+}/*CSS*/
+.P_svg:nth-child(3) svg circle:nth-child(2){
+	stroke-dashoffset: calc(200 - (200 * 60) / 100);
+	/*calc = calculate 줄임 말 "-" 요소는 띄어쓰기를 해야만
+	마이너스 요소로 바뀜*/
+	stroke: #6B66FF;
+}/*ANDROID JAVA*/
+.P_svg:nth-child(4) svg circle:nth-child(2){
+	stroke-dashoffset: calc(200 - (200 * 50) / 100);
+	/*calc = calculate 줄임 말 "-" 요소는 띄어쓰기를 해야만
+	마이너스 요소로 바뀜*/
+	stroke: pink;
+}
+.Since_All{
+	position: relative;
+	width: 100%
+}
+.Since_bg{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	background: url('baljagook.png');
+	background-repeat: no-repeat;
+	background-size: 900px;
+	width: 900px;
+	height: 700px;
+	bottom: 460px;
+}
+.Since_title{
+	position: absolute;/*절대값*/
+	text-align: center;
+	margin: 0 auto;
+	left: 320px;
+	top: 180px;
+	font-size: 40px;
+	font-weight: bold;
+}
+.Since_line{
+	position: absolute;/*가운데 선이기에 절대 값.*/
+	background-color: #fbeaea;
+	margin: 0 auto;
+	top: 190px;
+	width: 10px;
+	height: 520px;
+}
+.Box_2012{
+	position: absolute;
+	display: table;/*박스 안에 글자를 밖으로 못나가게 하기 위해 박스를 table 값으로 하고 글자를 table-cell 값으로 하여 박스 안에 글자가 못나가게 한다*/
+	padding: 10px;
+	top: 270px;
+	right: 500px;
+	width: 500px;
+	height: 50px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #3f3f3f;
+}
+.Box_2012 p{
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;/*텍스트 안 세로 영역 가운데 정렬*/
+	left: 10%;
+	line-height: 1.7em;
+	font-size: 11px;
+}
+.Date_2012{
+	position: absolute;
+	margin: 0 auto;
+	right: 300px;
+	top: 280px;
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+}
+.Box_2012:hover{
+	font-weight: bold;
+}
+.Box_2015{
+	position: absolute;
+	display: table;
+	margin: 0 auto;
+	top: 350px;
+	left: 500px;
+	width: 500px;
+	height: 50px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #3f3f3f;
+}
+.Box_2015 p{
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;/*텍스트 안 세로 영역 가운데 정렬*/
+	line-height: 1.7em;
+	font-size: 11px;
+}
+.Date_2015{
+	position: absolute;
+	margin: 0 auto;
+	left: 300px;
+	top: 370px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+}
+.Box_2015:hover{
+	font-weight: bold;
+}
+.Box_2017{
+	position: absolute;
+	display: table;
+	margin: 0 auto;
+	padding: 10px;
+	top: 460px;
+	right: 500px;
+	width: 500px;
+	height: 50px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #3f3f3f;
+}
+.Box_2017 p{
+	position: relative;
+	left: 30px;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.7em;
+	font-size: 11px;
+}
+.Date_2017{
+	position: absolute;
+	margin: 0 auto;
+	color: red;
+	right: 280px;
+	top: 470px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+}
+.Box_2017:hover{
+	font-weight: bold;
+}
+.Box_2018{
+	position: absolute;
+	display: table;
+	margin: 0 auto;
+	padding: 10px;
+	top: 550px;
+	left: 500px;
+	width: 500px;
+	height: 50px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #3f3f3f;
+}
+.Box_2018 p{
+	position: relative;
+	left: 30px;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.7em;
+	font-size: 11px;
+}
+.Date_2018{
+	position: absolute;
+	margin: 0 auto;
+	left: 280px;
+	top: 560px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+}
+.Box_2018:hover{
+	font-weight: bold;
+}
+.Box_2020{
+	position: absolute;
+	display: table;
+	margin: 0 auto;
+	padding: 10px;
+	top: 620px;
+	right: 500px;
+	width: 500px;
+	height: 50px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #3f3f3f;
+}
+.Box_2020 p{
+	position: relative;
+	left: 30px;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.7em;
+	font-size: 11px;
+}
+.Date_2020{
+	position: absolute;
+	margin: 0 auto;
+	right: 280px;
+	top: 640px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+}
+.Box_2020:hover{
+	font-weight: bold;
+}
+
+/*서비스*/
+.Service{
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	bottom: 350px;
+}	
+.Service_add{
+	position: relative;
+	text-align: center;
+	font-size: 20px;
+	bottom: 350px;
+	color: #D5D5D5;
+}
+.Top_all{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.Top_box{
+	position: relative;
+	margin: 10px;
+	bottom: 300px;
+	width: 300px;
+	height: 150px;/*Border color을 적용하려면 style 적용부터 해야됨.*/
+}
+.Top_box:hover{
+	box-shadow: 5px 5px 5px #848484 inset, 10px 10px 10px #848484;
+	font-weight: bold;
+}
+.Web_image{
+	position: relative;
+	display: block; /*div 클래스 안에 이미즤를 가운데 정렬 하고싶을 떄 display: block 처리하며 margin left, right에 auto값을 주면 div 안에 이미지가 가운데 정렬이 된다!*/
+	margin-top: 5px;
+	background: url('web.png');
+	background-repeat: no-repeat;
+	background-size: 40px;
+	width: 40px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.Web_contants{
+	position: relative;
+	text-align: center;
+	font-size: 12px;
+}
+.Web_title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.Top_box:hover .Web_title{
+	color: #e54700;
+}
+.App_image{
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	background: url('android.png');
+	background-repeat: no-repeat;
+	background-size: 40px;
+	width: 40px;
+	height: 40px;
+}
+.App_contants{
+	position: relative;
+	text-align: center;
+	font-size: 12px;
+}
+.App_title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.Top_box:hover .App_title{
+	color: #e54700;
+}
+.Paperwork_image{
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	background: url('paper.png');
+	background-repeat: no-repeat;
+	background-size: 40px;
+	width: 40px;
+	height: 40px;
+}
+.Paperwork_contants{
+	position: relative;
+	text-align: center;
+	font-size: 12px;
+}
+.Paperwork_title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.Top_box:hover .Paperwork_title{
+	color: #e54700;
+}
+.Bottom_all{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.Bottom_box{
+	position: relative;
+	margin: 1px;
+	width: 300px;
+	height: 150px;
+	bottom: 270px;
+}
+.Bottom_box:hover{
+	box-shadow: 5px 5px 5px #848484 inset, 10px 10px 10px #848484;
+	font-weight: bold;
+}
+.Marketing_image{
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	background: url('marketing.png');
+	background-repeat: no-repeat;                                                                                                                                                                                               
+	background-size: 40px;
+	width: 40px;
+	height: 40px;
+}
+.Marketing_contants{
+	position: relative;
+	text-align: center;
+	font-size: 12px;
+}
+.Marketing_title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.Bottom_box:hover .Marketing_title{
+	color: #e54700;
+}
+.Design_image{
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	background: url('desgin.png');
+	background-repeat: no-repeat;                                                                                                                                                                                               
+	background-size: 40px;
+	width: 40px;
+	height: 40px;
+}
+.Design_contants{
+	position: relative;
+	text-align: center;
+	font-size: 12px;
+}
+.Design_title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.Bottom_box:hover .Design_title{
+	color: #e54700;
+}
+.Idea_image{
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	background: url('idea.png');
+	background-repeat: no-repeat;                                                                                                                                                                                               
+	background-size: 40px;
+	width: 40px;
+	height: 40px;
+}
+.Idea_contants{
+	position: relative;
+	text-align: center;
+	font-size: 12px;
+}
+.Idea_title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.Bottom_box:hover .Idea_title{
+	color: #e54700;
+}
+
+/*포트폴리오*/
+.Portfolio_title{
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	bottom: 140px
+}
+.Portfolio_add{
+	position: relative;
+	text-align: center;
+	font-size: 20px;
+	color: #d8d8d8;
+	bottom: 140px;
+}
+.title_deco1{
+	position: relative;
+	margin: 0 auto;
+	background-color: #eeeeee;
+	width: 130px;
+	height: 30px;
+	bottom: 230px;
+	right: 100px;
+	z-index: -1;
+}
+.title_deco2{
+	position: relative;
+	margin: 0 auto;
+	background-color: #eeeeee;
+	width: 130px;
+	height: 30px;
+	bottom: 230px;
+	left: 100px;
+	z-index: -1;
+}	
+.Portfolio_back{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.Portfolio_all{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.App_Web_Paper{
+	position: relative;
+	bottom: 170px;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+}
+.Portfolio_App_title{
+	position: relative;
+	right: 250px;
+	font-size: 25px;
+	border-bottom: solid 2px;
+	font-weight: bold;
+}
+.Portfolio_Web_title{
+	position: relative;
+	font-size: 25px;
+	border-bottom: solid 2px;
+	font-weight: bold;
+}
+.Portfolio_Paper_title{
+	position: relative;
+	left: 250px;
+	text-align: center;
+	font-size: 25px;
+	border-bottom: solid 2px;
+	font-weight: bold;
+}
+.Back{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+}
+.Port_App_contants{
+	position: relative;
+	display: flex;
+	align-items: center;/*flex-derection 값이 column일 경우 가운데 정렬을 하고싶으면 align-item을 센터 값으로 주면 가운데 정렬이 가능 해진다.*/
+	flex-direction: column;
+	margin-bottom: 0;
+	bottom: 150px;
+	right: 20px;
+}
+.See_phone{
+	position: relative;
+	display: table;/*hover 하기 위해*/
+	background: url('App1.png');
+	background-repeat: no-repeat;
+	align-items: center;
+	text-decoration: none;
+	background-size: 300px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 150px;
+}
+.See_phone_hover{
+	position: relative;
+	background-color: black;
+	display: table-cell;/*See_phone 연결*/
+	opacity: 0;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.See_phone:hover .See_phone_hover{
+	color: white;
+	opacity: 0.8;
+}
+.See_phone_main{
+	position: fixed;
+	display: table;
+	background-color: black;
+	padding: 20px;
+	z-index: -1;
+	text-align: right;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 600px;
+	height: 300px;
+	bottom: 150px;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.See_phone_main video{
+	position: relative;
+	display: table-cell;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	width: 300px;
+	height: 200px;
+}
+.See_phone_main:target{
+	z-index: 1000;
+	visibility: visible;
+}
+.See_phone_main a{
+	color: grey;
+	text-decoration: none;
+}
+.No_smoke{
+	position: relative;
+	display: table;
+	text-decoration: none;
+	background: url('App2.png');
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: 300px;
+	width: 300px;
+	height: 150px;
+}
+.No_smoke_hover{
+	position: relative;
+	background-color: black;
+	display: table-cell;
+	opacity: 0;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%
+	height: 100%;
+	z-index: 1;
+}
+.No_smoke:hover .No_smoke_hover{
+	color: white;
+	opacity: 0.8
+}
+.No_smoke_main{
+	position: fixed;
+	display: table;
+	background-color: black;
+	padding: 20px;
+	z-index: -1;
+	text-align: right;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 600px;
+	height: 300px;
+	bottom: 150px;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.No_smoke_main video{
+	position: relative;
+	display: table-cell;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	width: 300px;
+	height: 200px;
+}
+.No_smoke_main:target{
+	z-index: 1000;
+	visibility: visible;
+}
+.No_smoke_main a{
+	color: grey;
+	text-decoration: none;
+}
+.Port_Wep_contants{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	bottom: 150px;
+}
+.First_web{
+	position: relative;
+	display: table;
+	background: url('Web2.png');
+	background-repeat: no-repeat;
+	align-items: center;
+	text-decoration: none;
+	background-size: 300px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 150px;
+}
+.First_web_hover{
+	position: relative;
+	display: table-cell;
+	background-color: black;
+	opacity: 0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	font-weight: bold;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.First_web:hover .First_web_hover{
+	color: white;
+	opacity: 0.8;
+}
+.First_web_main{
+	position: fixed;
+	display: table;
+	background-color: black;
+	padding: 20px;
+	z-index: -1;
+	text-align: right;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 600px;
+	height: 300px;
+	bottom: 150px;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.First_web_main video{
+	position: relative;
+	display: table-cell;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	width: 300px;
+	height: 200px;
+}
+.First_web_main:target{
+	z-index: 1000;
+	visibility: visible;
+}
+.First_web_main a{
+	color: grey;
+	text-decoration: none;
+}
+.Second_web{
+	position: relative;
+	display: table;
+	text-decoration: none;
+	background: url('Web1.png');
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: 300px;
+	width: 300px;
+	height: 150px;
+}
+.Second_web_hover{
+	position: relative;
+	display: table-cell;
+	background-color: black;
+	opacity: 0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	font-weight: bold;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.Second_web:hover .Second_web_hover{
+	color: white;
+	opacity: 0.8;
+}
+.Second_web_main{
+	position: fixed;
+	display: table;
+	background-color: black;
+	padding: 20px;
+	z-index: -1;
+	text-align: right;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 600px;
+	height: 300px;
+	bottom: 150px;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.Second_web_main video{
+	position: relative;
+	display: table-cell;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	width: 300px;
+	height: 200px;
+}
+.Second_web_main:target{
+	z-index: 1000;
+	visibility: visible;
+}
+.Second_web_main a{
+	color: grey;
+	text-decoration: none;
+}
+.Port_Paper_contants{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	bottom: 150px;
+	left: 20px;
+}
+.First_paper{
+	position: relative;
+	display: table;
+	text-decoration: none;
+	background: url('paper1.png');
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: 300px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 150px;
+}
+.First_paper_hover{
+	position: relative;
+	display: table-cell;
+	background-color: black;
+	opacity: 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align: middle;
+	z-index: 1;
+}
+.First_paper:hover .First_paper_hover{
+	color: white;
+	opacity: 0.8;
+}
+.First_paper_main{
+	position: fixed;
+	display: table;
+	background-color: black;
+	padding: 20px;
+	z-index: -1;
+	text-align: right;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 600px;
+	height: 300px;
+	bottom: 150px;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.First_paper_main video{
+	position: relative;
+	display: table-cell;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	width: 300px;
+	height: 200px;
+}
+.First_paper_main:target{
+	z-index: 1000;
+	visibility: visible;
+}
+.First_paper_main a{
+	color: grey;
+	text-decoration: none;
+}
+.Second_paper{
+	position: relative;
+	display: table;
+	text-decoration: none;
+	background: url('paper2.png');
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: 300px;
+	width: 300px;
+	height: 150px;
+}
+.Second_paper_hover{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	opacity: 0;
+	background-color: black;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align: middle;
+	z-index: 1;
+}
+.Second_paper:hover .Second_paper_hover{
+	color: white;/*.Second_paper_hover에 넣어도 됨*/
+	opacity: 0.8;
+}
+.Second_paper_main{
+	position: fixed;
+	display: table;
+	background-color: black;
+	padding: 20px;
+	z-index: -1;
+	text-align: right;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 600px;
+	height: 300px;
+	bottom: 150px;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.Second_paper_main video{
+	position: relative;
+	display: table-cell;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	width: 300px;
+	height: 200px;
+}
+.Second_paper_main:target{
+	z-index: 1000;
+	visibility: visible;
+}
+.Second_paper_main a{
+	color: grey;
+	text-decoration: none;
+}
+/*contact 부분*/
+
+.Contact_title{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	bottom: 100px;
+	right: 300px;
+	line-height: 50px;
+	font-size: 450%;
+	font-stretch: expanded;
+	font-weight: bold;
+}
+.Contact_contacts{
+	position: relative;
+	display: flex;
+	right: 280px;
+	bottom: 110px;
+	justify-content: center;
+	font-size: 13px;
+}
+.Sns{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+	bottom: 30px;
+	right: 380px;
+}
+.Sns_contants{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	right: 180px;
+}
+.Contact_line{
+	position: relative;
+	margin: 0 auto;
+	right: 460px;
+	width: 20px;
+	height: 300px;
+	bottom: 330px;
+	background-color: #FA5858;
+	margin-bottom: -390px;/*밑에 여백을 line으로 기준하여 없애자*/
+}
+.Facebook{
+	position: relative;
+	display: block;
+	background: url(facebook.png);
+	margin: 2px;
+	background-size: 30px;
+	width: 30px;
+	height: 30px;
+}
+.Instagram{
+	position: relative;
+	display: block;
+	justify-content: center;
+	background: url(instagram.png);
+	margin: 2px;
+	background-size: 30px;
+	width: 30px;
+	height: 30px;
+}
+.Github{
+	position: relative;
+	display: block;
+	justify-content: center;
+	background: url(github.png);
+	margin: 2px;
+	background-size: 30px;
+	width: 30px;
+	height: 30px;	
+}
+.form-elements{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	font-weight: bold;
+	bottom: 10px;
+}
+.Name{
+	position: relative;
+	bottom: 300px;
+	left: 350px;
+}
+#name{
+	border-bottom: solid 1px;
+	border-right: none;
+	border-left: none;
+	border-top: none; 
+}
+.E-mail{
+	position: relative;
+	bottom: 200px;
+	left: 190px;
+}
+#email{
+	border-bottom: solid 1px;
+	border-right: none;
+	border-left: none;
+	border-top: none; 
+}
+.Message{
+	position: relative;
+	bottom: 120px;
+	left: 25px;
+}
+#message{
+	border-bottom: solid 1px;
+	border-right: none;
+	border-left: none;
+	border-top: none; 	
+}
+.Send_btn{
+	position: relative;
+	width: 50px;
+	height: 20px;
+	bottom: 50px;
+	left: 40px;
+}
+.thankyou_message{
+	position: relative;
+	text-align: center;
+	font-size: 10px;
+	margin-left: 450px;
+	bottom: 120px;
+	visibility: hidden;
+}
+
+/* 해상도 1680 이상 일 때 */
+@media (min-width: 1680px){
+body{
+	position: relative;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+#Menu_bar{
+	position: fixed;/*간단하게 메뉴바 상단 고정*/
+	text-align: center;
+	margin: 0 auto;
+	height: 100px;
+	width: 100%;
+	margin-bottom: 200px;
+	top: 0;
+	z-index: 10000;
+	background-color: #ffffff;
+}
+#Menu_bar a[class="logo"] {
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	background: url('Logo.png');
+	background-repeat: no-repeat;
+	background-size: 150px;
+	top: 20px;
+	right: 500px;
+	width: 150px;
+	height: 70px;
+}
+#Menu_bar a[class="Menu"]{
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	bottom: 30px;
+	left: 250px;
+	color: #000000;
+	font-size: 25px;
+}
+#Menu_bar a[class="Menu"]:hover{
+	font-weight: bolder;
+}
+.Hello{
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	right: 240px;
+	top: 250px;
+	font-size: 200px;
+	font-weight: bold;
+}
+.Hello_H{
+	color: #4285f4
+}
+.Hello_E{
+	color: #ea4335
+}
+.Hello_L{
+	color: #fbbc05
+}
+.Hello_L2{
+	color: #4285f4
+}
+.Hello_O{
+	color: #34a853
+}
+.Hello_bar{
+	position: relative;
+	background-color: #fae9e8;
+	margin: 0 auto;
+	left:  90px;
+	width: 300px;
+	height: 35px;
+	top: 180px;
+	z-index: -1;
+}
+.Search_bar{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 200px;
+	left: 50px;
+	width: 850px;
+	height: 150px;
+	margin: 0 auto;
+	background-color: none;
+	box-shadow: 5px 5px 5px #3f3f3f inset, 5px 5px 5px #3f3f3f;/*iinset 안쪽그림자*/
+	border-radius: 30px;
+}
+.Search_contant{
+	position: relative;
+	text-align: center;
+	left: 30px;
+	margin: 25px;
+	margin-right: 100px;
+	font-size: 70px
+}
+.typing{  
+	position: relative;
+	display: inline; 
+	animation-name: cursor; 
+	animation-duration: 1s; 
+	animation-iteration-count: infinite; 
+	font-size: 70px;
+} 
+.typing-txt{
+	text-align: center;
+	position: relative;
+	display: none; /*none 해놔야 ul 부분 안뜸*/
+}
+@keyframes cursor{ 
+	0%{border-right: 1px solid #fff} 
+	50%{border-right: 1px solid #000} 
+	100%{border-right: 1px solid #fff} 
+}
+.Dodbogi{
+	position: relative;
+	display: block;
+	background: url('dodbogi.png');
+	margin: 0 auto;
+	background-size: 80px;
+	width: 80px;
+	height: 80px;
+	top: 90px;
+	left: 400px;
+}
+
+.About_title{
+	position: relative;
+	text-align: center;
+	font-size: 65px;
+	top: 350px;
+	font-weight: bold;
+}
+.About_bg{
+	position: relative;
+	background: url('AboutA.png');
+	background-repeat: no-repeat;/*이미지 한번만.*/
+	margin: 0 auto;
+	background-size: 800px;/*백그라운드 사이즈 지정 하고 
+	width height 지정 하면 기본 이미지 파일보다 커지게 할 수 있음.*/
+	width: 800px;
+	height: 800px;
+	left: 100px;
+	top: 230px;
+}
+.About_me{/*비*/
+	position: relative;
+	background: url('AboutMe.png');
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	background-size: 300px;
+	right: 420px;
+	width: 300px;
+	height: 300px;
+	bottom: 470px;
+}
+.About_all{
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 100%;
+}
+.About_contants{
+	position: relative;
+	left: 200px;
+	bottom: 730px;
+	font-size: 23px;
+}
+.About_contants b{
+	font-size: 35px;
+}
+.Profile{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	font-size: 22px;
+	right: 250px;
+	bottom: 640px;
+}
+.Skill_container{
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	bottom: 750px;
+	width: 100px;
+	height: 100px;
+	left: 300px;
+}
+.P_svg{
+	position: relative;
+	text-align: center;
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+	z-index: 1000;
+}
+.Percent{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	z-index: 1000;
+}
+.Percent .P_num{
+	position: absolute;
+	bottom: 25px;
+	left: 30px;
+}
+.Percent .P_num h1{
+	font-size: 20px;
+}
+.text{
+	position: relative;
+	font-size: 20px;
+	z-index: 1;
+	bottom: 150px;
+	right: 0px;
+}
+.SVG svg circle{
+	cx: 45;
+	cy: 45;
+	r: 45;
+}
+svg circle{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	stroke-width: 10;
+	stroke: none;/*원 100%*/
+	fill: none;
+	transform: translate(5px,5px);
+}
+svg circle:nth-child(2){
+	stroke-dasharray: 280;
+	stroke-dashoffset: 280;
+}
+.P_svg:nth-child(1) svg circle:nth-child(2){
+	stroke-dashoffset: calc(280 - (280 * 80) / 100);
+	/*calc = calculate 줄임 말 "-" 요소는 띄어쓰기를 해야만
+	마이너스 요소로 바뀜*/
+	stroke: purple;
+}/*HTML*/
+.P_svg:nth-child(2) svg circle:nth-child(2){
+	stroke-dashoffset: calc(280 - (280 * 70) / 100);
+	/*calc = calculate 줄임 말 "-" 요소는 띄어쓰기를 해야만
+	마이너스 요소로 바뀜*/
+	stroke: green;
+}/*CSS*/
+.P_svg:nth-child(3) svg circle:nth-child(2){
+	stroke-dashoffset: calc(280 - (280 * 60) / 100);
+	/*calc = calculate 줄임 말 "-" 요소는 띄어쓰기를 해야만
+	마이너스 요소로 바뀜*/
+	stroke: #6B66FF;
+}/*ANDROID JAVA*/
+.P_svg:nth-child(4) svg circle:nth-child(2){
+	stroke-dashoffset: calc(280 - (280 * 50) / 100);
+	/*calc = calculate 줄임 말 "-" 요소는 띄어쓰기를 해야만
+	마이너스 요소로 바뀜*/
+	stroke: pink;
+}
+.Since_All{
+	position: relative;
+	width: 100%
+}
+.Since_bg{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	background: url('baljagook.png');
+	background-repeat: no-repeat;
+	background-size: 900px;
+	width: 900px;
+	height: 700px;
+	bottom: 700px;
+}
+.Since_title{
+	position: absolute;/*절대값*/
+	text-align: center;
+	margin: 0 auto;
+	left: 230px;
+	top: 180px;
+	font-size: 65px;
+	font-weight: bold;
+}
+.Since_line{
+	position: absolute;/*가운데 선이기에 절대 값.*/
+	background-color: #fbeaea;
+	margin: 0 auto;
+	top: 190px;
+	width: 20px;
+	height: 760px;
+}
+.Box_2012{
+	position: absolute;
+	display: table;/*박스 안에 글자를 밖으로 못나가게 하기 위해 박스를 table 값으로 하고 글자를 table-cell 값으로 하여 박스 안에 글자가 못나가게 한다*/
+	padding: 10px;
+	top: 270px;
+	right: 500px;
+	width: 650px;
+	height: 80px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #3f3f3f;
+}
+.Box_2012 p{
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;/*텍스트 안 세로 영역 가운데 정렬*/
+	left: 10%;
+	line-height: 1.7em;
+	font-size: 14px;
+}
+.Date_2012{
+	position: absolute;
+	margin: 0 auto;
+	right: 280px;
+	top: 280px;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+}
+.Box_2012:hover{
+	font-weight: bold;
+}
+.Box_2015{
+	position: absolute;
+	display: table;
+	margin: 0 auto;
+	top: 380px;
+	left: 480px;
+	width: 650px;
+	height: 80px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #3f3f3f;
+}
+.Box_2015 p{
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;/*텍스트 안 세로 영역 가운데 정렬*/
+	line-height: 1.7em;
+	font-size: 14px;
+}
+.Date_2015{
+	position: absolute;
+	margin: 0 auto;
+	left: 270px;
+	top: 400px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 45px;
+}
+.Box_2015:hover{
+	font-weight: bold;
+}
+.Box_2017{
+	position: absolute;
+	display: table;
+	margin: 0 auto;
+	padding: 10px;
+	top: 510px;
+	right: 500px;
+	width: 650px;
+	height: 80px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #3f3f3f;
+}
+.Box_2017 p{
+	position: relative;
+	left: 30px;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.7em;
+	font-size: 14px;
+}
+.Date_2017{
+	position: absolute;
+	margin: 0 auto;
+	color: red;
+	right: 280px;
+	top: 520px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 45px;
+}
+.Box_2017:hover{
+	font-weight: bold;
+}
+.Box_2018{
+	position: absolute;
+	display: table;
+	margin: 0 auto;
+	padding: 10px;
+	top: 620px;
+	left: 480px;
+	width: 650px;
+	height: 80px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #3f3f3f;
+}
+.Box_2018 p{
+	position: relative;
+	left: 30px;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.7em;
+	font-size: 14px;
+}
+.Date_2018{
+	position: absolute;
+	margin: 0 auto;
+	left: 270px;
+	top: 640px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 45px;
+}
+.Box_2018:hover{
+	font-weight: bold;
+}
+.Box_2020{
+	position: absolute;
+	display: table;
+	margin: 0 auto;
+	padding: 10px;
+	top: 750px;
+	right: 500px;
+	width: 650px;
+	height: 80px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #3f3f3f;
+}
+.Box_2020 p{
+	position: relative;
+	left: 30px;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.7em;
+	font-size: 14px;
+}
+.Date_2020{
+	position: absolute;
+	margin: 0 auto;
+	right: 280px;
+	top: 770px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 45px;
+}
+.Box_2020:hover{
+	font-weight: bold;
+}
+
+/*서비스*/
+.Service{
+	position: relative;
+	text-align: center;
+	font-size: 65px;
+	font-weight: bold;
+	bottom: 350px;
+}	
+.Service_add{
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	bottom: 350px;
+	color: #D5D5D5;
+}
+.Top_all{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.Top_box{
+	position: relative;
+	margin: 10px;
+	bottom: 250px;
+	width: 400px;
+	height: 200px;/*Border color을 적용하려면 style 적용부터 해야됨.*/
+}
+.Top_box:hover{
+	box-shadow: 5px 5px 5px #848484 inset, 10px 10px 10px #848484;
+	font-weight: bold;
+}
+.Web_image{
+	position: relative;
+	display: block; /*div 클래스 안에 이미즤를 가운데 정렬 하고싶을 떄 display: block 처리하며 margin left, right에 auto값을 주면 div 안에 이미지가 가운데 정렬이 된다!*/
+	margin-top: 5px;
+	background: url('web.png');
+	background-repeat: no-repeat;
+	background-size: 50px;
+	width: 50px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.Web_contants{
+	position: relative;
+	text-align: center;
+	font-size: 15px;
+}
+.Web_title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.Top_box:hover .Web_title{
+	color: #e54700;
+}
+.App_image{
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	background: url('android.png');
+	background-repeat: no-repeat;
+	background-size: 50px;
+	width: 50px;
+	height: 50px;
+}
+.App_contants{
+	position: relative;
+	text-align: center;
+	font-size: 15px;
+}
+.App_title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.Top_box:hover .App_title{
+	color: #e54700;
+}
+.Paperwork_image{
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	background: url('paper.png');
+	background-repeat: no-repeat;
+	background-size: 50px;
+	width: 50px;
+	height: 50px;
+}
+.Paperwork_contants{
+	position: relative;
+	text-align: center;
+	font-size: 15px;
+}
+.Paperwork_title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.Top_box:hover .Paperwork_title{
+	color: #e54700;
+}
+.Bottom_all{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.Bottom_box{
+	position: relative;
+	margin: 1px;
+	width: 400px;
+	height: 200px;
+	bottom: 200px;
+}
+.Bottom_box:hover{
+	box-shadow: 5px 5px 5px #848484 inset, 10px 10px 10px #848484;
+	font-weight: bold;
+}
+.Marketing_image{
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	background: url('marketing.png');
+	background-repeat: no-repeat;                                                                                                                                                                                               
+	background-size: 50px;
+	width: 50px;
+	height: 50px;
+}
+.Marketing_contants{
+	position: relative;
+	text-align: center;
+	font-size: 15px;
+}
+.Marketing_title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.Bottom_box:hover .Marketing_title{
+	color: #e54700;
+}
+.Design_image{
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	background: url('desgin.png');
+	background-repeat: no-repeat;                                                                                                                                                                                               
+	background-size: 50px;
+	width: 50px;
+	height: 50px;
+}
+.Design_contants{
+	position: relative;
+	text-align: center;
+	font-size: 15px;
+}
+.Design_title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.Bottom_box:hover .Design_title{
+	color: #e54700;
+}
+.Idea_image{
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	background: url('idea.png');
+	background-repeat: no-repeat;                                                                                                                                                                                               
+	background-size: 50px;
+	width: 50px;
+	height: 50px;
+}
+.Idea_contants{
+	position: relative;
+	text-align: center;
+	font-size: 15px;
+}
+.Idea_title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.Bottom_box:hover .Idea_title{
+	color: #e54700;
+}
+
+/*포트폴리오*/
+.Portfolio_title{
+	position: relative;
+	text-align: center;
+	font-size: 65px;
+	font-weight: bold;
+	bottom:  70px
+}
+.Portfolio_add{
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	color: #d8d8d8;
+	bottom: 80px;
+}
+.title_deco1{
+	position: relative;
+	margin: 0 auto;
+	background-color: #eeeeee;
+	width: 150px;
+	height: 40px;
+	bottom: 190px;
+	right: 200px;
+	z-index: -1;
+}
+.title_deco2{
+	position: relative;
+	margin: 0 auto;
+	background-color: #eeeeee;
+	width: 150px;
+	height: 40px;
+	bottom: 190px;
+	left: 180px;
+	z-index: -1;
+}	
+.Portfolio_back{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.Portfolio_all{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.App_Web_Paper{
+	position: relative;
+	bottom: 140px;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+}
+.Portfolio_App_title{
+	position: relative;
+	right: 350px;
+	font-size: 35px;
+	border-bottom: solid 2px;
+	font-weight: bold;
+}
+.Portfolio_Web_title{
+	position: relative;
+	left: 20px;
+	font-size: 35px;
+	border-bottom: solid 2px;
+	font-weight: bold;
+}
+.Portfolio_Paper_title{
+	position: relative;
+	left: 350px;
+	text-align: center;
+	font-size: 35px;
+	border-bottom: solid 2px;
+	font-weight: bold;
+}
+.Back{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+}
+.Port_App_contants{
+	position: relative;
+	display: flex;
+	align-items: center;/*flex-derection 값이 column일 경우 가운데 정렬을 하고싶으면 align-item을 센터 값으로 주면 가운데 정렬이 가능 해진다.*/
+	flex-direction: column;
+	margin-bottom: 0;
+	bottom: 120px;
+	right: 50px;
+}
+.See_phone{
+	position: relative;
+	display: table;/*hover 하기 위해*/
+	background: url('App1.png');
+	background-repeat: no-repeat;
+	align-items: center;
+	text-decoration: none;
+	background-size: 400px;
+	margin-bottom: 20px;
+	width: 400px;
+	height: 250px;
+}
+.See_phone_hover{
+	position: relative;
+	background-color: black;
+	display: table-cell;/*See_phone 연결*/
+	opacity: 0;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.See_phone:hover .See_phone_hover{
+	color: white;
+	opacity: 0.8;
+}
+.See_phone_main{
+	position: fixed;
+	display: table;
+	background-color: black;
+	padding: 20px;
+	z-index: -1;
+	text-align: right;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 1200px;
+	height: 600px;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.See_phone_main video{
+	position: relative;
+	display: table-cell;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	width: 800px;
+	height: 400px;
+}
+.See_phone_main:target{
+	z-index: 1000;
+	visibility: visible;
+}
+.See_phone_main a{
+	font-size: 20px;
+	color: grey;
+	text-decoration: none;
+}
+.No_smoke{
+	position: relative;
+	display: table;
+	text-decoration: none;
+	background: url('App2.png');
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: 400px;
+	width: 400px;
+	height: 250px;
+}
+.No_smoke_hover{
+	position: relative;
+	background-color: black;
+	display: table-cell;
+	opacity: 0;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%
+	height: 100%;
+	z-index: 1;
+}
+.No_smoke:hover .No_smoke_hover{
+	color: white;
+	opacity: 0.8
+}
+.No_smoke_main{
+	position: fixed;
+	display: table;
+	background-color: black;
+	padding: 20px;
+	z-index: -1;
+	text-align: right;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 1200px;
+	height: 600px;
+	bottom: 150px;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.No_smoke_main video{
+	position: relative;
+	display: table-cell;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	width: 800px;
+	height: 400px;
+}
+.No_smoke_main:target{
+	z-index: 1000;
+	visibility: visible;
+}
+.No_smoke_main a{
+	font-size: 20px;
+	color: grey;
+	text-decoration: none;
+}
+.Port_Wep_contants{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	bottom: 120px;
+	left: 70px;
+}
+.First_web{
+	position: relative;
+	display: table;
+	background: url('Web2.png');
+	background-repeat: no-repeat;
+	align-items: center;
+	text-decoration: none;
+	background-size: 400px;
+	margin-bottom: 20px;
+	right: 70px;
+	width: 400px;
+	height: 250px;
+}
+.First_web_hover{
+	position: relative;
+	display: table-cell;
+	background-color: black;
+	opacity: 0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+	font-weight: bold;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.First_web:hover .First_web_hover{
+	color: white;
+	opacity: 0.8;
+}
+.First_web_main{
+	position: fixed;
+	display: table;
+	background-color: black;
+	padding: 20px;
+	z-index: -1;
+	text-align: right;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 1200px;
+	height: 600px;
+	bottom: 150px;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.First_web_main video{
+	position: relative;
+	display: table-cell;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	width: 800px;
+	height: 400px;
+}
+.First_web_main:target{
+	z-index: 1000;
+	visibility: visible;
+}
+.First_web_main a{
+	font-size: 20px;
+	color: grey;
+	text-decoration: none;
+}
+.Second_web{
+	position: relative;
+	display: table;
+	text-decoration: none;
+	background: url('Web1.png');
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: 400px;
+	right: 70px;
+	width: 400px;
+	height: 250px;
+}
+.Second_web_hover{
+	position: relative;
+	display: table-cell;
+	background-color: black;
+	opacity: 0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+	font-weight: bold;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.Second_web:hover .Second_web_hover{
+	color: white;
+	opacity: 0.8;
+}
+.Second_web_main{
+	position: fixed;
+	display: table;
+	background-color: black;
+	padding: 20px;
+	z-index: -1;
+	text-align: right;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 1200px;
+	height: 600px;
+	bottom: 150px;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.Second_web_main video{
+	position: relative;
+	display: table-cell;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	width: 800px;
+	height: 400px;
+}
+.Second_web_main:target{
+	z-index: 1000;
+	visibility: visible;
+}
+.Second_web_main a{
+	font-size: 30px;	
+	color: grey;
+	text-decoration: none;
+}
+.Port_Paper_contants{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	bottom: 120px;
+	left: 50px;
+}
+.First_paper{
+	position: relative;
+	display: table;
+	text-decoration: none;
+	background: url('paper1.png');
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: 400px;
+	margin-bottom: 20px;
+	width: 400px;
+	height: 250px;
+}
+.First_paper_hover{
+	position: relative;
+	display: table-cell;
+	background-color: black;
+	opacity: 0;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	vertical-align: middle;
+	z-index: 1;
+}
+.First_paper:hover .First_paper_hover{
+	color: white;
+	opacity: 0.8;
+}
+.First_paper_main{
+	position: fixed;
+	display: table;
+	background-color: black;
+	padding: 20px;
+	z-index: -1;
+	text-align: right;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 1200px;
+	height: 600px;
+	bottom: 150px;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.First_paper_main video{
+	position: relative;
+	display: table-cell;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	width: 800px;
+	height: 400px;
+}
+.First_paper_main:target{
+	font-size: 30px;
+	z-index: 1000;
+	visibility: visible;
+}
+.First_paper_main a{
+	color: grey;
+	text-decoration: none;
+}
+.Second_paper{
+	position: relative;
+	display: table;
+	text-decoration: none;
+	background: url('paper2.png');
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: 400px;
+	width: 400px;
+	height: 250px;
+}
+.Second_paper_hover{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	opacity: 0;
+	background-color: black;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	vertical-align: middle;
+	z-index: 1;
+}
+.Second_paper:hover .Second_paper_hover{
+	color: white;/*.Second_paper_hover에 넣어도 됨*/
+	opacity: 0.8;
+}
+.Second_paper_main{
+	position: fixed;
+	display: table;
+	background-color: black;
+	padding: 20px;
+	z-index: -1;
+	text-align: right;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 1200px;
+	height: 600px;
+	bottom: 150px;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.Second_paper_main video{
+	position: relative;
+	display: table-cell;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	width: 800px;
+	height: 400px;
+}
+.Second_paper_main:target{
+	z-index: 1000;
+	visibility: visible;
+}
+.Second_paper_main a{
+	font-size: 30px;
+	color: grey;
+	text-decoration: none;
+}
+/*contact 부분*/
+
+.Contact_title{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	bottom: 100px;
+	right: 350px;
+	line-height: 100px;
+	font-size: 100px;
+	font-stretch: expanded;
+	font-weight: bold;
+}
+.Contact_contacts{
+	position: relative;
+	display: flex;
+	right: 320px;
+	bottom: 150px;
+	justify-content: center;
+	font-size: 17px;
+}
+.Sns{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	right: 450px;
+	top: 50px;
+}
+.Sns_contants{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	right: 200px;
+	top: 50px;
+}
+.Contact_line{
+	position: relative;
+	margin: 0 auto;
+	right: 560px;
+	width: 30px;
+	height: 500px;
+	bottom: 440px;
+	background-color: #FA5858;
+	margin-bottom: -550px;/*밑에 여백을 line으로 기준하여 없애자*/
+}
+.Facebook{
+	position: relative;
+	display: block;
+	background: url(facebook.png);
+	margin: 2px;
+	background-size: 50px;
+	width: 50px;
+	height: 50px;
+}
+.Instagram{
+	position: relative;
+	display: block;
+	justify-content: center;
+	background: url(instagram.png);
+	margin: 2px;
+	background-size: 50px;
+	width: 50px;
+	height: 50px;
+}
+.Github{
+	position: relative;
+	display: block;
+	justify-content: center;
+	background: url(github.png);
+	margin: 2px;
+	background-size:50px;
+	width: 50px;
+	height: 50px;	
+}
+.form-elements{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	font-weight: bold;
+	bottom: 400px;
+}
+.Name{
+	position: relative;
+	bottom: 100px;
+	left: 660px;
+}
+#name{
+	width: 400px;
+	border-bottom: solid 1px;
+	border-right: none;
+	border-left: none;
+	border-top: none; 
+}
+.E-mail{
+	position: relative;
+	top: 30px;
+	left: 260px;
+}
+#email{
+	width: 400px;
+	border-bottom: solid 1px;
+	border-right: none;
+	border-left: none;
+	border-top: none; 
+}
+.Message{
+	position: relative;
+	top: 150px;
+	transform: translateX(-33%);/* 왜 right 태그로 움지기이지 안을가 의문.*/
+}
+.Message textarea{/*cols 조정여기서*/
+	position: relative;
+	width: 500px;
+}
+#message{
+	border-bottom: solid 1px;
+	border-right: none;
+	border-left: none;
+	border-top: none; 	
+}
+.Send_btn{
+	position: relative;
+	width: 70px;
+	height: 30px;
+	top: 240px;
+	transform: translateX(-250%);/*왜 right 태그로 움직이지 안을가?? tip:*/
+}
+.thankyou_message{
+	position: relative;
+	text-align: center;
+	font-size: 15px;
+	margin-left: 550px;/* margin으로 밀어야 밑에 스크롤이 안생김.*/
+	bottom: 220px;
+	visibility: hidden;
+}
+}

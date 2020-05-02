@@ -1,0 +1,238 @@
+body{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	position: absolute;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+a{/*화면을 전체를 a태그를 해주기 위해 a태그를 css 해줘야 된다.*/
+	width: 100%;/*a태그를 body 전체에 씌우게 되면 px달라져서 설정을 해줘야됨.*/
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#Top_line{
+	top: 100px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	align-items: center;
+}
+#Top_line path:nth-child(1){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Top_line path:nth-child(2){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Under_line{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	top: 450px;
+	position: relative;
+	align-items: center;
+}
+#Under_line path:nth-child(1){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Under_line path:nth-child(2){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Left_line{
+	bottom: 60px;
+	height: 508px;
+	left: 130px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	align-items: center;
+}
+#Left_line path:nth-child(1){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Left_line path:nth-child(2){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Right_line{
+	top: 60px;
+	height: 508px;
+	left: 300px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	align-items: center;
+}
+#Right_line path:nth-child(1){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Right_line path:nth-child(2){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+@keyframes line-anim{
+	to{
+		stroke-dashoffset: 0px;
+	} /*로고 키프레임!*/
+}
+#Develope{
+	position: relative;
+	width: 250px;
+	right: 200px;
+	-webkit-animation: fadein 15s;
+}
+#Press{
+	position: relative;
+	right: 380px;
+	top: 100px;
+	-webkit-animation: fadein 20s;
+}
+@-webkit-keyframes fadein{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+
+
+@media (min-width: 1680px){
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	position: fixed;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#Top_line{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 150px;
+	margin: 0 auto;
+	padding: 0;
+	align-items: center;
+}
+#Top_line path:nth-child(1){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Top_line path:nth-child(2){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Under_line{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	top: 650px;
+	align-items: center;
+}
+#Under_line path:nth-child(1){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Under_line path:nth-child(2){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Left_line{
+	position: relative;
+	height: 1000px;
+	width: auto;
+	left: 130px;
+	bottom: 345px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	align-items: center;
+}
+#Left_line path:nth-child(1){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Left_line path:nth-child(2){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Right_line{
+	position: relative;
+	bottom: 200px;
+	height: 1000px;
+	top: 100px;
+	width: auto;
+	left: 300px;
+	position: relative;
+}
+#Right_line path:nth-child(1){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+#Right_line path:nth-child(2){
+	stroke-dasharray: 10000px;
+	stroke-dashoffset: 10000px;
+	animation:  line-anim 20s ease forwards;
+}
+@keyframes line-anim{
+	to{
+		stroke-dashoffset: 0px;
+	} /*로고 키프레임!*/
+}
+#Develope{
+	position: relative;
+	width: 350px;
+	right: 400px;
+	bottom: 100px;
+	-webkit-animation: fadein 15s;
+}
+#Press{
+	position: relative;
+	right: 600px;
+	top: 1px;
+}
+@-webkit-keyframes fadein{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+}
